@@ -39,3 +39,26 @@ console.log(person.name3);
 let selection='name3';
 person[selection]='cj6';
 console.log(person.name3);
+
+//array
+let selectedcolors = ['red','blue'];
+console.log(selectedcolors);
+console.log(selectedcolors[0]);
+selectedcolors[2]='green'
+selectedcolors[2]=1;
+console.log(selectedcolors);
+console.log(selectedcolors.length);
+
+
+//function
+function greet (name,lastname){
+    console.log('hello '+name+' '+lastname)
+}
+greet ('john','smith');
+greet ('mary');
+
+//calculating value
+function sqaure(number){
+    return number*number;
+}
+console.log(sqaure(2));
