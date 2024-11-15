@@ -12,9 +12,13 @@ console.log(name);
 let firstName ='cj',lastName='jayahansa';
 console.log(firstName,lastName);
 
-//consetnt
+//consetnt variables
 const eage=13;
 console.log(eage); 
+
+// var variables
+var name34='j34';
+console.log(name34);
 
 //primitive type
 let name2 ='cj2';
