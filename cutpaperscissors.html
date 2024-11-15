@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>cut paper scissors</title>
+</head>
+<body>
+
+    <p>
+        Rock paper scissors
+    </p>
+
+    <button onclick="const randomNumber= Math.random();
+    console.log(randomNumber);
+    let computerMove='';
+    if (randomNumber >=0 && randomNumber<1/3){
+        computerMove='rock';
+    }else if (randomNumber>1/3 && randomNumber <2/3){
+       computerMove='paper';
+    }else{
+        computerMove='scissors';
+    };
+    
+    console.log(computerMove);
+
+    if (computerMove =='rock'){
+        result='you tie';
+    }else if(computerMove=='paper'){
+        result='you Win';
+    }else if(computerMove=='scissors'){
+       result='you loss';
+    }
+    
+    
+alert(`You Piked Rock. computerpiked ${computerMove}. ${result}`);"
+    
+    
+    
+    
+    >Rock</button>
+
+
+    <button onclick="const randomNumber2= Math.random();
+    console.log(randomNumber2);
+
+    if (randomNumber2 >=0 && randomNumber2<1/3){
+        computerMove='rock';
+    }else if (randomNumber2>1/3 && randomNumber2 <2/3){
+       computerMove='paper';
+    }else{
+        computerMove='scissors';
+    };
+    
+    console.log(computerMove);
+
+    if (computerMove =='rock'){
+        result='you loss ';
+    }else if(computerMove=='paper'){
+        result='you Tie';
+    }else if(computerMove=='scissors'){
+       result='you win';
+    }
+    
+    
+alert(`You Piked paper. computerpiked ${computerMove}. ${result}`);"
+    >pepar</button>
+
+
+
+    <button onclick="const randomNumber3= Math.random();
+    console.log(randomNumber3);
+    if (randomNumber3 >=0 && randomNumber3<1/3){
+        computerMove='rock';
+    }else if (randomNumber3>1/3 && randomNumber3 <2/3){
+       computerMove='paper';
+    }else{
+        computerMove='scissors';
+    };
+    
+    console.log(computerMove);
+
+    if (computerMove=='rock'){
+        result='you lose';
+    }else if(computerMove=='paper'){
+        result='you win';
+    }else if(computerMove=='scissors'){
+       result='you tie';
+    }
+    
+    
+alert(`You Piked scissors. computerpiked ${computerMove}. ${result}`);"
+    >scissors</button>
+
+    
+</body>
+</html>
