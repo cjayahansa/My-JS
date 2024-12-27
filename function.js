@@ -1,12 +1,25 @@
+
+
+const score={
+    wins:0,
+    losses:0,
+    ties:0
+};
+
+
+
 function playgame(playname){
-    if(playname='Scissor'){ 
+
+
+
+    if(playname==='Scissor'){ 
            console.log (pickcomputervalue());
 
                     
                 console.log(computerMove);
 
                 if (computerMove=='rock'){
-                    result='you lose';
+                    result='you loss';
                 }else if(computerMove=='paper'){
                     result='you win';
                 }else if(computerMove=='scissors'){
@@ -14,44 +27,57 @@ function playgame(playname){
                 }
 
 
-                alert(`You Piked scissors. computerpiked ${computerMove}. ${result}`);
+           
 
 
-    }else if(playname='rock'){
+    }else if(playname==='rock'){
                                 pickcomputervalue();
                 console.log(computerMove);
 
                 if (computerMove =='rock'){
                     result='you tie';
                 }else if(computerMove=='paper'){
-                    result='you Win';
+                    result='you win';
                 }else if(computerMove=='scissors'){
                 result='you loss';
                 }
     
     
-                alert(`You Piked Rock. computerpiked ${computerMove}. ${result}`);
+                
     
 
 
 
 
-    }else if(playname=paper){
+    }else if(playname==='paper'){
                  pickcomputervalue();
                 
                 console.log(computerMove);
 
                 if (computerMove =='rock'){
-                    result='you loss ';
+                    result='you loss';
                 }else if(computerMove=='paper'){
-                    result='you Tie';
+                    result='you tie';
                 }else if(computerMove=='scissors'){
                 result='you win';
                 }
                 
                 
-                alert(`You Piked paper. computerpiked ${computerMove}. ${result}`);
+                
     }
+
+    if(result==='you win'){
+        score.wins +=1;
+    }else if(result ==='you loss'){
+        score.losses +=1;
+    }else if(result ==='you tie'){
+        score.ties +=1;
+    };
+
+
+
+    alert(`You Piked ${playname}. computerpiked ${computerMove}. ${result}
+        wins ${score.wins}. loss ${score.losses}. tie ${score.ties}.`);
 
 }
 
